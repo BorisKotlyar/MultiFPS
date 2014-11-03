@@ -51,7 +51,6 @@ namespace Assets.Scripts
             //myPlayerGO.GetComponent<FPSInputController>().enabled = true;
             myPlayerGO.GetComponent<MouseLook>().enabled = true;
             myPlayerGO.transform.FindChild("Main Camera").gameObject.SetActive(true);
-            myPlayerGO.GetComponent<PlayerMovement>().enabled = true;
             //((MonoBehaviour) myPlayerGO.GetComponent("CharacterMotor")).enabled = true;
         }
     }
