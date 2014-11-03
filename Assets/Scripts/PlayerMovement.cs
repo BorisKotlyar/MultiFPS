@@ -48,7 +48,6 @@ namespace Assets.Scripts
 
             if (_cc.isGrounded && _verticalVelocity < 0)
             {
-                print("must not jump");
                 _anim.SetBool("Jumping",false);
                 _verticalVelocity = Physics.gravity.y*Time.deltaTime;
             }
@@ -56,7 +55,6 @@ namespace Assets.Scripts
             {
                 if (Mathf.Abs(_verticalVelocity) > _jumpSpeed*0.75f)
                 {
-                    print("must not jump");
                     _anim.SetBool("Jumping",true);
                 }
 
